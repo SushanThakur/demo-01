@@ -1,9 +1,9 @@
 const Hero = () => {
   return (
-    <div className='w-screen flex items-center justify-center h-[90vh]'>
+    <div className='w-screen flex items-center justify-center '>
 
 
-      <div className='w-[95vw] max-w-[1400px] flex sm:flex-row flex-col items-center justify-center gap-8 sm:gap-16 mt-[140px] sm:mt-0'>
+      <div className='w-[95vw] max-w-[1400px] flex lg:flex-row flex-col items-center justify-center gap-8 md:gap-16 mt-[80px]'>
         <div className='flex flex-col gap-8 sm:max-w-[600px]'>
           <h1 className='sm:text-8xl text-6xl font-bold'>Best Solution For Business</h1>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus nostrum libero deserunt facere quisquam quia repudiandae suscipit dolor, pariatur odit.</p>
@@ -23,11 +23,6 @@ const Hero = () => {
 
           <div className='flex flex-row gap-4'>
             <div className="avatar-group -space-x-6 rtl:space-x-reverse">
-              <div className="avatar">
-                <div className="w-12">
-                  <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-                </div>
-              </div>
               <div className="avatar">
                 <div className="w-12">
                   <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
@@ -62,7 +57,7 @@ const Hero = () => {
         </div>
 
 
-        <div className='sm:h-[520px] overflow-hidden rounded-xl group flex flex-row items-end justify-end h-[300px]'>
+        <div className='lg:h-[520px] overflow-hidden rounded-xl group flex flex-row items-end justify-end h-[520px]'>
           <img
             src="/hero-person-standing.png"
             alt="Home Page Picture"

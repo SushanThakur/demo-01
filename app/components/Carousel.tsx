@@ -33,7 +33,7 @@ const Carousel: React.FC = () => {
 
   return (
     <div className="section-container">
-      <div className="section bg-pink-100 p-8">
+      <div className="section bg-pink-100 p-8 rounded-3xl">
         <div className="carousel w-full overflow-hidden relative h-[400px] ">
           <div className="relative h-full flex transition-transform duration-700 " style={{ transform: `translateX(-${activeSlide * 100}%)` }}>
             {slides.map((slide, index) => (
