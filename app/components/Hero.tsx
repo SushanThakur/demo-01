@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const Hero = () => {
   return (
     <div className='w-screen flex items-center justify-center '>
@@ -10,13 +12,14 @@ const Hero = () => {
 
 
           <div className='flex flex-row gap-8'>
-            <div className='flex flex-row gap-4 items-center bg-green-500 px-8 py-4 rounded-full font-bold cursor-pointer hover:bg-green-600 delayTime text-white'>
-              Get Started
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-              </svg>
-
-            </div>
+            <Link href='/LoginSignup'>
+              <div className='flex flex-row gap-4 items-center bg-green-500 px-8 py-4 rounded-full font-bold cursor-pointer hover:bg-green-600 delayTime text-white'>
+                Get Started
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                </svg>
+              </div>
+            </Link>
             <div className='flex flex-row gap-4 items-center px-8 py-4 rounded-full border-2 border-green-500 cursor-pointer hover:bg-green-500 delayTime'>Learn More</div>
           </div>
 

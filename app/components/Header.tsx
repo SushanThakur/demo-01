@@ -9,7 +9,9 @@ const Header = () => {
     <div className="sticky top-0 flex h-[80px] items-center justify-center shadow-lg px-4 z-30 bg-white">
       <div className="flex w-full max-w-[1400px] justify-between items-center font-semibold h-full">
         {/* Logo */}
-        <div className="btn">Demo Logo</div>
+        <Link href='/'>
+          <div className="btn">Demo Logo</div>
+        </Link>
 
         {/* Mobile Menu Toggle */}
         <div className="lg:hidden flex items-center">
@@ -61,8 +63,8 @@ const Header = () => {
                 </svg>
               </Link>
               <ul className="absolute hidden group-hover:flex py-4 flex-col gap-2 bg-slate-50 px-8 top-[80px] border-t-4 border-green-500 delay">
-                <li><Link href="/">Page 1</Link></li>
-                <li><Link href="/">Page 2</Link></li>
+                <li><Link href="/Contact">Contact Page</Link></li>
+                <li><Link href="/LoginSignup">Login/Signup</Link></li>
                 <li><Link href="/">Page 3</Link></li>
               </ul>
             </li>
@@ -111,8 +113,8 @@ const Header = () => {
                   <details>
                     <summary>Home</summary>
                     <ul>
-                      <li><a>Link 1</a></li>
-                      <li><a>Link 2</a></li>
+                      <li><Link href='/'>Link 1</Link></li>
+                      <li><Link href='/'>Link 2</Link></li>
                     </ul>
                   </details>
                 </li>
@@ -120,9 +122,9 @@ const Header = () => {
                   <details>
                     <summary>Services</summary>
                     <ul>
-                      <li><a>Service 1</a></li>
-                      <li><a>Service 2</a></li>
-                      <li><a>Service 3</a></li>
+                      <li><Link href='/'>Service 1</Link></li>
+                      <li><Link href='/'>Service 2</Link></li>
+                      <li><Link href='/'>Service 3</Link></li>
                     </ul>
                   </details>
                 </li>
@@ -130,8 +132,12 @@ const Header = () => {
                   <details>
                     <summary>Pages</summary>
                     <ul>
-                      <li><a>Page 1</a></li>
-                      <li><a>Page 2</a></li>
+                      <li>
+                        <Link href='/Contact'>Contact Page</Link>
+                      </li>
+                      <li>
+                        <Link href='/LoginSignup'>Login/Signup</Link>
+                      </li>
                     </ul>
                   </details>
                 </li>
@@ -139,21 +145,22 @@ const Header = () => {
                   <details>
                     <summary>Blog</summary>
                     <ul>
-                      <li><a>Blog 1</a></li>
-                      <li><a>Blog 2</a></li>
+                      <li><Link href='/'>Blog 1</Link></li>
+                      <li><Link href='/'>Blog 2</Link></li>
                     </ul>
                   </details>
                 </li>
-                <li><a>Contact</a></li>
+                <li><Link href='/Contact'>Contact</Link></li>
               </ul>
             </li>
-            <li className="py-2 px-4 border border-green-500 rounded-full bg-green-500 text-white hover:bg-green-600 flex flex-row gap-2">
-              Register Now
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-              </svg>
-
-            </li>
+            <Link href='/LoginSignup'>
+              <li className="py-2 px-4 border border-green-500 rounded-full bg-green-500 text-white hover:bg-green-600 flex flex-row gap-2">
+                Register Now
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                </svg>
+              </li>
+            </Link>
           </ul>
         </div>
       )}
