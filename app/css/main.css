@@ -76,7 +76,7 @@ body{
   .div4 { grid-area: 4 / 4 / 7 / 6; }
 
 
-@media (max-width: 512px) {
+@media (max-width: 976px) {
   .parent {
     display: flex;
     flex-direction: column;
